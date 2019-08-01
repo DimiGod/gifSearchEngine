@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gif Search Engine</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Giphy API</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
 
-<body>
-    <!-- Title, Search Bar and Button Container -->
-    <div class="container">
-        <h1>Gif Search</h1>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputSearch">Search for gifs here</label>
-                <input type="phrase" class="form-control" id="gifName" aria-describedby="searchHelp"
-                    placeholder="Start typing...">
-                <small id="searchHelp" class="form-text text-muted">Type a keyword or phrase to find the perfect
-                    gif</small>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="giphy-heading">Giphys</div>
+                </div>
             </div>
-            <button id="search" type="search" class="btn btn-primary">Search</button>
-        </form>
-    </div>
-    <!-- Container for search results-->
-    <!-- <div class="container" id="movie-section"></div> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
-</body>
+            <div class="row">
+                <div class="col-md-12" id="giphy-input">
+                        Seach for Giphys <input id="giphy-name">
+                        <button id="search">Get Giphy(s)</button>
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-12">
+                    <span id="giphy1"></span>
+                </div>
+            </div>
+         
+        </div>
+        <div class="container" id="movie-section">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        </div> 
+    </body>
 
 </html>
